@@ -1,0 +1,109 @@
+:root {
+  --rosa: #ff6b81;
+  --rosa-claro: #ffe9ee;
+  --gris-suave: #f5f5f5;
+  --gris-texto: #444;
+  --borde-suave: #ffd4dc;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--gris-suave);
+  color: var(--gris-texto);
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: var(--gris-suave);
+}
+
+/* TÍTULOS Y TEXTOS */
+h1, h2, h3 {
+  color: var(--rosa);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p, input, label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--gris-texto);
+}
+
+/* CONTENEDOR PRINCIPAL */
+#app {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(255, 107, 129, 0.2);
+  margin-top: 20px;
+}
+
+/* MENÚ */
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+button {
+  background-color: var(--rosa);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e65a73;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--borde-suave);
+  margin-bottom: 12px;
+  font-size: 1rem;
+  background: #fff8fa;
+}
+
+input:focus {
+  border-color: var(--rosa);
+  outline: none;
+  background-color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  #app {
+    padding: 16px;
+    margin-top: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
